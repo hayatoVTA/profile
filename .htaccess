@@ -1,0 +1,4 @@
+AuthName "fit1"
+AuthType Digest
+AuthUserFile /home/s23142ho/.htdigest
+require user yukichi
