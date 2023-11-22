@@ -18,6 +18,7 @@ h3 {
 a {
   color: #001eae;
   font-size: 20px;
+  word-break: break-all;
 }
 
 .container {
@@ -52,6 +53,10 @@ a {
   margin-bottom: 20px;
   font-size: 20px;
   font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+.left-panel-box>div {
+  margin: 20px;
 }
 
 .intr-name {
