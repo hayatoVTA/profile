@@ -1,0 +1,26 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/jws-2020/v1"
+  ],
+  "id": "did:web:hayato-blog.net",
+  "verificationMethod": [
+    {
+      "id": "did:web:hayato-blog.net#owner",
+      "type": "JsonWebKey2020",
+      "controller": "did:web:hayato-blog.net",
+      "publicKeyJwk": {
+        "kty": "EC",
+        "crv": "secp256k1",
+        "x": "BwuUCtHZO3dhBjF81gFHEhEOWY2EpF1oMe3ccQcuW0I=",
+        "y": "C2c8gu9AKRctqLRPYtblOqsaCvoP8h0UJ42aT12Dy3Q"
+      }
+    }
+  ],
+  "authentication": [
+    "did:web:hayato-blog.net#owner"
+  ],
+  "assertionMethod": [
+    "did:web:hayato-blog.net#owner"
+  ]
+}
