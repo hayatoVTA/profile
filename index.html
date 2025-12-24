@@ -21,7 +21,7 @@
       <div class="left-panel-box">
         <div><img class="icon" src="./images/icon.JPG" alt="icon-image"></div>
         <h3 class="intr-name">Hayato Omori</h3>
-        <div>JPchain Inc. CEO / MONONO Inc. COO / N高→慶應SFC</div>
+        <div>JPchain Inc. CEO / 慶應SFC→DeNA</div>
       </div>
     </div>
     <div class="right-panel">
@@ -29,26 +29,40 @@
         <div class="right-panel-inner">
           <div class="hobby">
             <h3>About</h3>
-            <div>2004/04/23 生まれ 20歳<br>JPchain株式会社を2022年に創業し、自社サービスの開発と受託開発を主軸として運営しています。2023年10月に慶應SFCの同期3人と合同会社MONONOを設立し、COOとして新規事業立ち上げに従事しています。</div>
+            <div>
+              2004/04/23 生まれ <span id="age"></span>歳<br>
+              2022年にJPchain株式会社を創業し、2024年には音声AIプラットフォーム「Aivis Project」「AivisSpeech」「AivisHub」をリリース。翌年2025年には事業売却を経験。
+            </div>
+            <script>
+              function calculateAge(birth) {
+                const today = new Date();
+                const birthDate = new Date(birth);
+                let age = today.getFullYear() - birthDate.getFullYear();
+                const m = today.getMonth() - birthDate.getMonth();
+                if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                  age--;
+                }
+                return age;
+              }
+              document.addEventListener('DOMContentLoaded', function() {
+                document.getElementById('age').textContent = calculateAge('2004-04-23');
+              });
+            </script>
             <br />
-            <div>Mail: h.omori@jpchain.jp</div>
+            <div>Mail: h.omori@jpchain.co.jp</div>
           </div>
           <div class="hobby">
             <h3>JPchain Inc.</h3>
-            <a href="https://www.jpchain.jp/" target="_blank">https://www.jpchain.jp/</a>
-          </div>
-          <div class="hobby">
-            <h3>MONONO Inc.</h3>
-            <a href="https://monono.co.jp/" target="_blank">https://monono.co.jp/</a>
+            <a href="https://www.jpchain.co.jp/" target="_blank">https://www.jpchain.co.jp/</a>
           </div>
           <div class="hobby">
             <h3>Twitter</h3>
-            <a href="https://twitter.com/hayato_omr/" target="_blank">https://twitter.com/hayato_omr/</a>
+            <a href="https://x.com/hayato_omr/" target="_blank">https://x.com/hayato_omr/</a>
           </div>
           <div class="hobby">
-            <h3>Wantedly</h3>
-            <a href="https://www.wantedly.com/id/hayato_omori"
-              target="_blank">https://www.wantedly.com/id/hayato_omori</a>
+            <h3>facebook</h3>
+            <a href="https://www.facebook.com/profile.php?id=100027709065045"
+              target="_blank">https://www.facebook.com/profile.php?id=100027709065045</a>
           </div>
           <div class="hobby">
             <h3>Github</h3>
@@ -59,17 +73,14 @@
             <a href="https://www.linkedin.com/in/hayato-omori-7796711b8/"
               target="_blank">https://www.linkedin.com/in/hayato-omori-7796711b8/</a>
           </div>
-          <div class="hobby">
-            <h3>facebook</h3>
-            <a href="https://www.facebook.com/profile.php?id=100027709065045"
-              target="_blank">https://www.facebook.com/profile.php?id=100027709065045</a>
-          </div>
           <div class="foods">
-            <h3>好きな食べ物</h3>
+            <h3>LIKE</h3>
             <ul>
               <li>ラーメン 🍜</li>
               <li>焼肉 🍖</li>
               <li>寿司 🍣</li>
+              <li>ポーカー 🃏</li>
+              <li>麻雀 🀄️</li>
             </ul>
           </div>
         </div>
